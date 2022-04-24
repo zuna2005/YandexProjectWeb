@@ -2,4 +2,180 @@
 
 {% block content %}
     <h2>Fizmat merch</h2>
+    <form method="post">
+        <div>
+            <input type="text" id="name_id" name="name">
+            <label for="name_id">ФИО</label>
+        </div>
+        <div>
+            <input type="text" id="phone_id" name="phone">
+            <label for="phone_id">Номер телефона</label>
+        </div>
+        <div>
+            <input type="text" id="address_id" name="address">
+            <label for="address_id">Адрес</label>
+        </div>
+        <div>
+            <label>Являетесь ли Вы работником или учеником РФМШ?</label>
+            <div class="form-check">
+                <input type="radio" name="ifspecial" id="yes_id" value="yes" checked>
+                <label for="yes_id">
+                    Да
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="ifspecial" id="no_id" value="no">
+                <label class="form-check-label" for="no_id">
+                    Нет
+                </label>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="polo_id" name="polo">
+            <label for="polo_id">ПОЛО</label>
+            <img src="static/img/polo.jfif" alt="polo_photo">
+            <p>Цена: 8000тг</p>
+            <p class="special">Для работников и учеников: 6000тг</p>
+            <label for="polonum_id">Количество</label>
+            <input type="number" id="polonum_id" name="polonum">
+            <label for="polosize_id">Размер</label>
+            <select id="polosize_id" name="polo_size">
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="hoodie_id" name="hoodie">
+            <label for="hoodie_id">ТОЛСТОВКА</label>
+            <img src="static/img/hoodie.jpg" alt="hoodie_photo">
+            <p>Цена: 15000тг</p>
+            <p class="special">Для работников и учеников: 12000тг</p>
+            <label for="hoodienum_id">Количество</label>
+            <input type="number" id="hoodienum_id" name="hoodienum">
+            <label for="hoodiesize_id">Размер</label>
+            <select id="hoodiesize_id" name="hoodie_size">
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="poolover_id" name="poolover">
+            <label for="poolover_id">КОФТА</label>
+            <img src="static/img/poolover.jpg" alt="poolover_photo">
+            <p>Цена: 9000тг</p>
+            <p class="special">Для работников и учеников: 7000тг</p>
+            <label for="poolovernum_id">Количество</label>
+            <input type="number" id="poolovernum_id" name="poolovernum">
+            <label for="pooloversize_id">Размер</label>
+            <select id="pooloversize_id" name="poolover_size">
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="cap_id" name="cap">
+            <label for="cap_id">БЕЙСБОЛКА</label>
+            <img src="static/img/cap.jpg" alt="cap_photo">
+            <p>Цена: 5000тг</p>
+            <p class="special">Для работников и учеников: 4000тг</p>
+            <label for="capnum_id">Количество</label>
+            <input type="number" id="capnum_id" name="capnum">
+            <label for="capsize_id">Размер</label>
+            <select id="capsize_id" name="cap_size">
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="backpack_id" name="backpack">
+            <label for="backpack_id">РЮКЗАК</label>
+            <img src="static/img/backpack.jpg" alt="backpack_photo">
+            <p>Цена: 15000тг</p>
+            <p class="special">Для работников и учеников: 10000тг</p>
+            <label for="backpacknum_id">Количество</label>
+            <input type="number" id="backpacknum_id" name="backpacknum">
+        </div>
+        <div>
+            <input type="checkbox" id="student_tie_id" name="student_tie">
+            <label for="student_tie_id">ГАЛСТУК УЧЕНИКА</label>
+            <img src="static/img/student_tie.jpg" alt="student_tie_photo">
+            <p>Цена: 5000тг</p>
+            <p class="special">Для работников и учеников: 4000тг</p>
+            <label for="student_tienum_id">Количество</label>
+            <input type="number" id="student_tienum_id" name="student_tienum">
+        </div>
+        <div>
+            <input type="checkbox" id="scarf_id" name="scarf">
+            <label for="scarf_id">ШАРФ</label>
+            <img src="static/img/scarf.jpg" alt="scarf_photo">
+            <p>Цена: 3000тг</p>
+            <p class="special">Для работников и учеников: 2500тг</p>
+            <label for="scarfnum_id">Количество</label>
+            <input type="number" id="scarfnum_id" name="scarfnum">
+        </div>
+        <div>
+            <input type="checkbox" id="teacher_tie_id" name="teacher_tie">
+            <label for="teacher_tie_id">ГАЛСТУК УЧИТЕЛЯ</label>
+            <img src="static/img/teacher_tie.jpg" alt="teacher_tie_photo">
+            <p>Цена: 7000тг</p>
+            <p class="special">Для работников и учеников: 5000тг</p>
+            <label for="teacher_tienum_id">Количество</label>
+            <input type="number" id="teacher_tienum_id" name="teacher_tienum">
+        </div>
+        <div>
+            <input type="checkbox" id="laptop_case_id" name="laptop_case">
+            <label for="laptop_case_id">ЧЕХОЛ ДЛЯ НОУТБУКА</label>
+            <img src="static/img/laptop_case.jpg" alt="laptop_case_photo">
+            <p>Цена: 5000тг</p>
+            <p class="special">Для работников и учеников: 4000тг</p>
+            <label for="laptop_casenum_id">Количество</label>
+            <input type="number" id="laptop_casenum_id" name="laptop_casenum">
+        </div>
+        <div>
+            <input type="checkbox" id="icon_id" name="icon">
+            <label for="icon_id">ЗНАЧОК</label>
+            <img src="static/img/icon.jpg" alt="icon_photo">
+            <p>Цена: 2000тг</p>
+            <p class="special">Для работников и учеников: 1500тг</p>
+            <label for="iconnum_id">Количество</label>
+            <input type="number" id="iconnum_id" name="iconnum">
+        </div>
+        <div>
+            <input type="checkbox" id="notebook_id" name="notebook">
+            <label for="notebook_id">БЛОКНОТ</label>
+            <img src="static/img/notebook.jpg" alt="notebook_photo">
+            <p>Цена: 3000тг</p>
+            <p class="special">Для работников и учеников: 1500тг</p>
+            <label for="notebooknum_id">Количество</label>
+            <input type="number" id="notebooknum_id" name="notebooknum">
+        </div>
+        <div>
+            <label>Желаемый способ доставки</label>
+            <div class="form-check">
+                <input type="radio" name="delivery" id="male" value="samovyvoz" checked>
+                <label for="male">
+                    Самовывоз
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="delivery" id="female" value="delivery">
+                <label class="form-check-label" for="female">
+                    Курьерская служба
+                </label>
+            </div>
+        </div>
+        <button type="submit">Купить</button>
+    </form>
 {% endblock %}
